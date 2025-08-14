@@ -35,6 +35,24 @@ header nav ul li a{
     font-weight: 500;
 }
 
+.logo{
+    position: absolute;
+    top: 4rem;
+    left: 16%;
+    /* transform: translateX(-50%); */
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
 .vert-border{
     position: absolute;
     left: 0;
@@ -76,6 +94,7 @@ header nav ul li a{
 .navigation nav a {
   text-decoration: none;
   color: var(--Primary-text);
+  background: var(--Primary-background);
   position: relative;
   padding: 8px 14px;
   border-radius: 6px;
@@ -85,19 +104,21 @@ header nav ul li a{
 
 .navigation nav a::after {
   position: absolute;
+  background: var(--Secondary-color);
   bottom: 0;
   left: 0;
   width: 0%;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, background 0.3s ease;
 }
 
 .navigation nav a.active::after {
   width: 100%;
+    background: var(--Secondary-color);
 }
 
 .navigation nav a.active {
-  background: var(--Secondary-color); /* Highlight color */
-  color: var(--Primary-background); /* Keep text dark */
+  background: var(--Secondary-color); 
+  color: var(--Primary-background); 
 }
 /* Box Jighlight End */
 
@@ -113,6 +134,10 @@ section h1{
     font-size: 8rem;
     font-weight: 600;
     margin-bottom: 2rem;
+}
+
+section h2{
+    text-decoration: underline;
 }
 
 
