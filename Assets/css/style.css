@@ -64,35 +64,6 @@ header nav ul li a{
     background-color: var(--Primary-text);
 }
 
-/* Line Highlight Start */
-/* .navigation nav a {
-  text-decoration: none;
-  color: var(--Primary-text);
-  position: relative;
-  padding-bottom: 4px;
-  transition: color 0.3s ease;
-} */
-
-/* .navigation nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 1%;
-  background-color: var(--Secondary-color);
-  transition: width 0.3s ease;
-}
-
-.navigation nav a.active::after {
-  width: 100%;
-}
-
-.navigation nav a.active {
-  color: var(--Primary-text);
-} */
-/* Line Highlight End */
-
 /* Box Highlight Start */
 .navigation nav a {
   text-decoration: none;
@@ -174,5 +145,49 @@ span{
   50% { border-color: transparent; }
 }
 
+.projects ul{
+    padding: 1rem;
+}
+
+.projects ul li{
+    margin: 1rem 0;
+}
+
+/* .projects ul li a{
+    text-decoration: none;
+    color: var(--Primary-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+} */
+
+/* Line Highlight Start */
+.projects ul li a{
+  text-decoration: none;
+  color: var(--Primary-text);
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.projects ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1%;
+  background-color: var(--Primary-text);
+  transition: width 0.3s ease;
+}
+
+.projects ul li a.active::after {
+  width: 100%;
+}
+
+.projects ul li a.active {
+  color: var(--Primary-text);
+}
+/* Line Highlight End */
 
 
