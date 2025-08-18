@@ -4,6 +4,8 @@
     --Primary-background: #0B0510;
     --Primary-text: #F5FEFD;
     --Secondary-color:  #E1EBEE;
+    --Complimentary-color: #6495ED;
+    --Cursor-white: url('./Assets/img/cursor.png');
 }
 
 *{
@@ -14,6 +16,7 @@
     color: var(--Primary-text);
     font-family: "Google Sans Code", monospace;
     scroll-behavior: smooth;
+    
 }
 
 header{
@@ -131,13 +134,44 @@ section{
 }
 
 section h1{
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
 section h2{
     text-decoration: underline;
+}
+
+.hero-links{
+  position: absolute;
+  bottom: 20%; 
+}
+
+.hero-links img{
+  width: 24px;
+  height: auto;
+}
+
+span{
+  color: var(--Complimentary-color);
+  font-weight: 600;
+}
+
+#typewriter {
+  font-weight: 600;
+  display: inline-block;
+  border-right: 2px solid var(--Complimentary-color); /* typing cursor */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.blink {
+  animation: blink 0.6s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
 
