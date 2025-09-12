@@ -43,13 +43,25 @@
     <section class="projects" id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><a href="https://theimaara.co.ke/sp" target="_blank">The Imaara Mall</a></li>
-            <li><a href="https://epione-health.com/" target="_blank">Epione-health</a></li>
-            <li><a href="http://abokadventures.com" target="_blank">Abok Adventures & Safaris</a></li>
-            <li><a href="http://github.com/Niarb144/heroX-v2" target="_blank">Hero-X</a></li>
-            <li><a href="https://github.com/Niarb144/maze-crawler" target="_blank">Maze-Crawler</a></li>
-            <li><a href="https://github.com/Niarb144/task_manager" target="_blank">Task Manager</a></li>
-    </section>
+            <li><a href="#" class="project-link" data-project="imaara">The Imaara Mall</a></li>
+            <li><a href="#" class="project-link" data-project="epione">Epione-health</a></li>
+            <li><a href="#" class="project-link" data-project="abok">Abok Adventures & Safaris</a></li>
+            <li><a href="#" class="project-link" data-project="herox">Hero-X</a></li>
+            <li><a href="#" class="project-link" data-project="maze">Maze-Crawler</a></li>
+            <li><a href="#" class="project-link" data-project="task">Task Manager</a></li>
+        </ul>
+        </section>
+
+        <!-- Modal Popup -->
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="projectImage" src="" alt="Project Screenshot">
+                <h3 id="projectTitle"></h3>
+                <p id="projectTech"></p>
+                <a id="projectLink" href="" target="_blank">View</a>
+            </div>
+        </div>
    
     <!-- Skills -->
     <section class="skills" id="skills">
@@ -110,5 +122,6 @@
 
 <script src="./Assets/js/navigation.js"></script>
 <script src="./Assets/js/typewriter.js"></script>
+<script src="./Assets/js/projects.js"></script>
 </body>
 </html>

@@ -187,6 +187,56 @@ span{
   width: 100%;
 }
 
+/* Modal Background */
+  .modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Modal Box */
+  .modal-content {
+    background: var(--Primary-background, var(--Secondary-color));
+    color: var(--Primary-text, #000);
+    padding: 20px;
+    border-radius: 1.5rem;
+    width: 90%;
+    max-width: 60%;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+  }
+
+  /* Close Button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Project Image */
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  @keyframes fadeIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
 /* Default (desktop) styles are already defined above */
 
 /* ===============================
@@ -273,6 +323,7 @@ span{
 @media (max-width: 480px) {
   header nav ul li a {
     font-size: 0.9rem;
+    margin-top: 1.2rem;
   }
 
   section h1 {
@@ -284,8 +335,7 @@ span{
   }
 
   .logo {
-    width: 3rem;
-    height: 3rem;
+    display: none;
   }
 }
 
