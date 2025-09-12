@@ -155,7 +155,7 @@ span{
 
 .projects a {
     position: relative;
-    color: #333;
+    color: var(--Primary-text);
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -170,12 +170,12 @@ span{
     bottom: -4px;
     width: 0;
     height: 2px;
-    background: #ff6600;
+    background: var(--Complimentary-color);
     transition: width 0.3s ease;
   }
 
   .projects a:hover {
-    color: #ff6600;
+    color: var(--Complimentary-color);
   }
 
   .projects a:hover::after {
