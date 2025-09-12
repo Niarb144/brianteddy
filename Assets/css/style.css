@@ -97,21 +97,21 @@ header nav ul li a{
 /* Box Jighlight End */
 
 section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    margin-left: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 5rem;
+  display: flex;
 }
 
 section h1{
-    font-size: 5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 5rem;
 }
 
 section h2{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hero-links{
@@ -122,6 +122,11 @@ section h2{
 .hero-links img{
   width: 24px;
   height: auto;
+}
+
+.hero-links a:hover img{
+  transform: scale(1.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 span{
@@ -146,40 +151,141 @@ span{
 }
 
 .projects ul{
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .projects ul li{
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .projects a {
-    position: relative;
-    color: var(--Primary-text);
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  color: var(--Primary-text);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* underline effect */
+.projects a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--Complimentary-color);
+  transition: width 0.3s ease;
+}
+
+.projects a:hover {
+  color: var(--Complimentary-color);
+}
+
+.projects a:hover::after {
+  width: 100%;
+}
+
+/* Default (desktop) styles are already defined above */
+
+/* ===============================
+   Mobile Responsiveness
+   =============================== */
+@media (max-width: 1024px) {
+  header {
+    margin-left: auto;
+    right: 0;
+    width: 10rem;
   }
 
-  /* underline effect */
-  .projects a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background: var(--Complimentary-color);
-    transition: width 0.3s ease;
+  .logo {
+    left: 8%;
   }
 
-  .projects a:hover {
-    color: var(--Complimentary-color);
+  section {
+    margin-left: 2rem;
   }
 
-  .projects a:hover::after {
+  section h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make header horizontal instead of vertical sidebar */
+  header {
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    top: 0;
+    background-color: var(--Primary-background);
+    line-height: normal;
+    z-index: 1000;
   }
 
+  header nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  header nav ul li a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+  }
+
+  .vert-border {
+    display: none;
+  }
+
+  section {
+    margin-left: 0;
+    padding: 6rem 1rem 2rem; /* add top padding to avoid overlap with fixed header */
+    height: auto;
+    min-height: 100vh;
+  }
+
+  section h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-links {
+    position: static;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  section h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 
