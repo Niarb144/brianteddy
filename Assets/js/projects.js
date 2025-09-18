@@ -2,7 +2,7 @@
   const projectData = {
     imaara: {
       title: "The Imaara Mall",
-      img: "Assets/img/imaara.png",
+      img: "Assets/img/imaara.webp",
       tech: "Built with HTML, CSS, JavaScript, PHP, MySql",
       link: "https://theimaara.co.ke"
     },
