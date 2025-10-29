@@ -18,7 +18,7 @@ export default function Modal({ project, onClose }) {
         />
         <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
         <p className="text-[--Secondary-color]">
-          A detailed description about the project could go here.
+          {project.description}
         </p>
       </div>
     </div>

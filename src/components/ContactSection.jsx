@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function ContactSection() {
   return (
     <section
-      id="contact"
+      id="contacts"
       className="flex flex-col justify-center min-h-screen px-20 py-16 md:px-10 bg-[--Primary-background] text-[--Primary-text]"
     >
       <motion.h1

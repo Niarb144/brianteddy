@@ -7,12 +7,12 @@ import ContactSection from '@/components/ContactSection';
 export default function Home() {
   return (
     
-      <main>
-        <Header />
-        <HeroSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <ContactSection />
+      <main className='overflow-y-scroll snap-y snap-mandatory'>
+        <Header className="snap-start" />
+        <HeroSection className="snap-start" />
+        <ProjectsSection className="snap-start" />
+        <SkillsSection className="snap-start" />
+        <ContactSection className="snap-start" />
       </main>
     
   );

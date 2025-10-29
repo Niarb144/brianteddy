@@ -1,10 +1,12 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom CSS Variables */
 :root {
-  --Primary-background: #0b0510;
+  --Primary-background: #11071a;
   --Primary-text: #f5fefd;
   --Secondary-color: #e1ebee;
   --Complimentary-color: #6495ed;

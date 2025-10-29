@@ -4,7 +4,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import SocialLinks from "./SocialLinks";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaXTwitter, FaFilePdf } from "react-icons/fa6";
 
 export default function HeroSection() {
   return (
@@ -55,46 +56,19 @@ export default function HeroSection() {
         viewport={{ once: true }}
         className="mt-10 flex gap-6"
       >
-        {/* <Link href="https://github.com/Niarb144" target="_blank">
-          <Image
-            src="/Assets/img/github (1).png"
-            alt="GitHub"
-            width={30}
-            height={30}
-            className="hover:scale-110 transition-transform duration-300"
-          />
+        <Link href="https://github.com/Niarb144" target="_blank">
+          <FaGithub />
         </Link>
         <Link href="https://x.com/BrianTeddy7" target="_blank">
-          <Image
-            src="/Assets/img/twitter.png"
-            alt="Twitter"
-            width={30}
-            height={30}
-            className="hover:scale-110 transition-transform duration-300"
-          />
+          <FaXTwitter />
         </Link>
-        <Link
-          href="https://www.linkedin.com/in/teddy-brian-7a0057228/"
-          target="_blank"
-        >
-          <Image
-            src="/Assets/img/linkedin.png"
-            alt="LinkedIn"
-            width={30}
-            height={30}
-            className="hover:scale-110 transition-transform duration-300"
-          />
+        <Link href="https://www.linkedin.com/in/teddy-brian-7a0057228/"target="_blank">
+          <FaLinkedin />
         </Link>
         <Link href="/Assets/docs/Brian Teddy's Resume.pdf" target="_blank">
-          <Image
-            src="/Assets/img/pdf-file.png"
-            alt="Resume PDF"
-            width={30}
-            height={30}
-            className="hover:scale-110 transition-transform duration-300"
-          />
-        </Link> */}
-        <SocialLinks />
+          <FaFilePdf />
+        </Link>
+        
       </motion.div>
     </section>
   );
